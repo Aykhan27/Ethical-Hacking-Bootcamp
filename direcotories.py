@@ -8,7 +8,7 @@ def request(url):
         return requests.get('http://' + url)
     except requests.exceptions.ConnectionError: pass
 
-
+ 
 file = open(file_name, 'r')
 for line in file:
     directory = line.strip()
